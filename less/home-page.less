@@ -56,13 +56,24 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        .btnGenerator(@bdrRadius: 5px, @padVert: 7px, @padSide: 12px);
-        text-align: center;
-        font-size: @defaultFontSize + 0.4rem;
-        width: 30%;
+    }
+    .btn {
+      .btnGenerator(@bdrRadius: 5px, @padVert: 7px, @padSide: 12px);
+      text-align: center;
+      font-size: @defaultFontSize + 0.4rem;
+      width: 30%;
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: inherit;
+        }
+      @media @phone {
+        width: 100%;
       }
+    }
+    .btn:hover {
+      color: @btn-bg-color;
+      background-color: @btnFontColor;
     }
 
     .walk-img {
