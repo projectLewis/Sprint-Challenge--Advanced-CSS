@@ -18,19 +18,31 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
   font-size: @h1FontSize;
+  @media @phone {
+    font-size: @h1FontSize - 0.4rem;
+  }
 }
 
 h2 {
   font-size: @h2FontSize;
+  @media @phone {
+    font-size: @h2FontSize - 0.4rem;
+  }
 }
 
 h3 {
   font-size: @h3FontSize;
+  @media @phone {
+    font-size: @h3FontSize - 0.4rem;
+  }
 }
 
 p {
   font-size: @defaultFontSize;
   line-height: 1.4;
+  @media @phone {
+    font-size: @defaultFontSize - 0.4rem;
+  }
 }
 
 .container{
