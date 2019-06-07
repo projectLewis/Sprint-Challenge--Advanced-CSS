@@ -189,6 +189,9 @@ p {
   margin: 0rem auto;
   padding: 1.5rem 0;
   text-align: center;
+  position: fixed;
+  top: 0;
+  opacity: 0.7;
 }
 .topNav .subNav {
   max-width: 45rem;
@@ -216,6 +219,12 @@ footer {
   footer {
     border-radius: 0px;
   }
+}
+.home {
+  margin-top: 10rem;
+}
+.home .intro .headerImg {
+  border-radius: 0.5rem;
 }
 @media (max-width: 50.0rem) {
   .home .intro .headerImg {
