@@ -3,13 +3,26 @@
 .home {
 
   .intro {
+    @media @phone {
+      .headerImg {
+        height: 50%;
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    }
 
     h2 {
-      padding: 15px;
+      padding: 1.5rem;
+      @media @phone {
+        padding: 1.5rem 2.0rem;
+      }
     }
 
     p {
-      padding:0 15px;
+      padding:0rem 1.5rem;
+      @media @phone {
+        padding: 0rem 2.0rem;
+      }
     }
   
   }
@@ -21,28 +34,43 @@
 
     img {
       width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
+      margin: 2.0rem 2.5%;
+      border-radius: 2.0rem;
       height: 100%;
+    }
+    @media @phone {
+      img {
+        width: 100%;
+        margin: 2.0rem;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
     }
   }
 
   .visit-planets {
-    padding: 15px;
+    padding: 1.5rem;
+    @media @phone {
+      padding: 1.5rem 20rem;
+    }
 
     h3 {
-      margin-top: 11px;
+      margin-top: 1.1rem;
     }
 
     p {
-      margin-top: 13px;
+      margin-top: 1.3rem;
     }
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    margin-top: 6.0rem;
+    border-top: 0.1rem solid @main-border-color;
+    padding: 5.0rem 6.0rem;
     display: flex;
     justify-content: center;
 
@@ -50,15 +78,15 @@
       width: 50%;
 
       h3 {
-        margin-bottom: 10px;
+        margin-bottom: 1.0rem;
       }
 
       p {
-        margin-bottom: 26px;
+        margin-bottom: 2.6rem;
       }
     }
     .btn {
-      .btnGenerator(@bdrRadius: 5px, @padVert: 7px, @padSide: 12px);
+      .btnGenerator(@bdrRadius: 0.5rem, @padVert: 0.7rem, @padSide: 1.2rem);
       text-align: center;
       font-size: @defaultFontSize + 0.4rem;
       width: 30%;
@@ -83,8 +111,22 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 1.0rem;
       }
+    }
+    @media @phone {
+      margin: 2.0rem;
+      padding: 1.5rem 0rem 0rem 0rem;
+      flex-direction: column-reverse;
+
+      .walk-text {
+        width: 100%;
+      }
+      .walk-img {
+        width: 100%;
+        margin: 0rem 0rem 2.0rem 0rem;
+      }
+
     }
   }
 }// home
