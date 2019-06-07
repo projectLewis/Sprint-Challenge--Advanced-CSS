@@ -1,1 +1,28 @@
 // Navigation code here
+.topNav {
+  width: 100%;
+  background-color: @nav-bg;
+  margin: 0rem auto;
+  padding: 1.5rem 0;
+  text-align: center;
+  // Fixed Nav Bar
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+  .subNav {
+    max-width: 45.0rem;
+    margin: 0rem auto;
+    padding-top: 1.5rem;
+    display: flex;
+    font-size: @defaultFontSize;
+    justify-content: space-evenly;
+  }
+  a {
+    text-decoration: none;
+    color: @nav-font;
+  }
+}
+// nav {
+//   position: fixed;
+//   top: 0;
+// }
