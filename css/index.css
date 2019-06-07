@@ -158,13 +158,13 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-#viewSettings {
+.container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  #viewSettings {
+  .container {
     max-width: 500px;
     background-color: yellow;
   }
@@ -178,6 +178,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer {
+    border-radius: 0px;
+  }
 }
 .home .intro h2 {
   padding: 15px;

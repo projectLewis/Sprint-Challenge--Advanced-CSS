@@ -1,11 +1,15 @@
 // Footer Styles
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: @footer-font-color;
+  background: @footer-background;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  .borderGenerator(1px);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media @phone {
+    border-radius: 0px;
+  }
 }
