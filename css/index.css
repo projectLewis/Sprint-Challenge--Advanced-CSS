@@ -259,11 +259,24 @@ footer {
   margin: 2rem 2.5%;
   border-radius: 2rem;
   height: 100%;
+  transition: transform 0.2s;
+}
+.home .space-images .blast:hover {
+  transform: scale(1.5);
+}
+.home .space-images .sky:hover {
+  transform: scale(1.5);
+}
+.home .space-images .launch:hover {
+  transform: scale(1.5);
 }
 @media (max-width: 50.0rem) {
   .home .space-images img {
     width: 100%;
     margin: 2rem;
+  }
+  .home .space-images .blast:hover {
+    transform: none;
   }
   .home .space-images .sky {
     display: none;
@@ -334,6 +347,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 1rem;
+  transition: transform 0.2s;
+}
+.home .walk .walk-img img:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 50.0rem) {
   .home .walk {
@@ -347,5 +364,8 @@ footer {
   .home .walk .walk-img {
     width: 100%;
     margin: 0rem 0rem 2rem 0rem;
+  }
+  .home .walk .walk-img img:hover {
+    transform: none;
   }
 }

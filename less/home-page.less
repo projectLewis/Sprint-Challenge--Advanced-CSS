@@ -2,7 +2,7 @@
 
 .home {
   margin-top: 10.0rem;
-  
+
   .intro {
     .headerImg {
       border-radius: 0.5rem;
@@ -41,11 +41,24 @@
       margin: 2.0rem 2.5%;
       border-radius: 2.0rem;
       height: 100%;
+      transition: transform .2s;
+    }
+    .blast:hover {
+      transform: scale(1.5);
+    }
+    .sky:hover {
+      transform: scale(1.5);
+    }
+    .launch:hover {
+      transform: scale(1.5);
     }
     @media @phone {
       img {
         width: 100%;
         margin: 2.0rem;
+      }
+      .blast:hover {
+        transform: none;
       }
       .sky {
         display: none;
@@ -117,6 +130,10 @@
         width: 100%;
         height: auto;
         border-radius: 1.0rem;
+        transition: transform .2s;
+      }
+      img:hover {
+        transform: scale(1.2);
       }
     }
     @media @phone {
@@ -130,8 +147,10 @@
       .walk-img {
         width: 100%;
         margin: 0rem 0rem 2.0rem 0rem;
+        img:hover {
+          transform: none;
+        }
       }
-
     }
   }
 }// home
