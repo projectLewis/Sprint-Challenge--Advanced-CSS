@@ -148,7 +148,7 @@ h5 {
 h1 {
   font-size: 4.1rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   h1 {
     font-size: 3.7rem;
   }
@@ -156,7 +156,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   h2 {
     font-size: 2.8rem;
   }
@@ -164,7 +164,7 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   h3 {
     font-size: 2.4rem;
   }
@@ -174,14 +174,13 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .container {
-    max-width: 500px;
-    background-color: yellow;
+    max-width: 50rem;
   }
 }
 .topNav {
@@ -213,12 +212,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   footer {
     border-radius: 0px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .intro .headerImg {
     height: 50%;
     width: 100%;
@@ -228,7 +227,7 @@ footer {
 .home .intro h2 {
   padding: 1.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .intro h2 {
     padding: 1.5rem 2rem;
   }
@@ -236,7 +235,7 @@ footer {
 .home .intro p {
   padding: 0rem 1.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .intro p {
     padding: 0rem 2rem;
   }
@@ -252,7 +251,7 @@ footer {
   border-radius: 2rem;
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .space-images img {
     width: 100%;
     margin: 2rem;
@@ -267,7 +266,7 @@ footer {
 .home .visit-planets {
   padding: 1.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .visit-planets {
     padding: 1.5rem 2rem;
   }
@@ -308,9 +307,10 @@ footer {
   color: inherit;
   font-size: inherit;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .walk .btn {
     width: 100%;
+    padding: 2.5rem;
   }
 }
 .home .walk .btn:hover {
@@ -326,7 +326,7 @@ footer {
   height: auto;
   border-radius: 1rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 50.0rem) {
   .home .walk {
     margin: 2rem;
     padding: 1.5rem 0rem 0rem 0rem;
